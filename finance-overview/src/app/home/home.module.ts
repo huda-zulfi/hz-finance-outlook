@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
+import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -15,6 +16,7 @@ import { MatListModule } from '@angular/material/list';
     MatCardModule,
     MatGridListModule,
     MatListModule,
+    MatTreeModule
   ],
 })
 export class HomeModule {}
