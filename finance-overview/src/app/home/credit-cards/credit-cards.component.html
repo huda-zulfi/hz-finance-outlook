@@ -1,0 +1,40 @@
+<p>credit-cards works!</p>
+
+
+<h4>
+    <h3>BOA bank details {{allBanksBills.boa}}</h3>
+    <h3>Chase bank details {{allBanksBills.chase}}</h3>
+    <h3>Discover bank details {{allBanksBills.discover}}</h3>
+</h4>
+
+<!-- <div>
+   i am getting data from http {{todos|async |json}}
+
+</div> -->
+<!-- <input [(ngModel)]= "what am i doing" /> -->
+ Search for data <input type="text" [(ngModel)]="inputValue"/>
+
+ test {{inputValue}} 
+ <h3>hello length = {{inputValue.length}}</h3>
+  <!-- length {{inputValue.length}} -->
+
+<table class="table" >
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Task Status</th>
+    </tr>
+  </thead>
+  <tbody *ngFor = "let t of todos | async; let i = index ">
+    <!-- <tr *ngIf="inputValue.length == 0 || t.title.includes(inputValue)" > -->
+         <tr *ngIf="!t.completed" >
+      <th scope="row">{{i+1}}</th>
+      <td>{{t.id}}</td>
+      <td>{{t.title}}</td>
+      <td>{{t.completed}}</td>
+    </tr>
+  
+  </tbody>
+</table>

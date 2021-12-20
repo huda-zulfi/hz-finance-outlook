@@ -10,7 +10,7 @@ import { DataServiceService } from '../data-service.service';
 export class HomeComponent implements OnInit {
   amount: any;
 
-  constructor(private dataService: DataServiceService, private creditCard: CreditCardService) {}
+  constructor(private dataService: DataServiceService ) {}
 
   ngOnInit(): void {
     this.getAmount()
@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
 
   getAmount() {
     //TODO
-    const accountInfo = this.creditCard.balanceDue();
+    const accountInfo = this.dataService.getData();
     this.amount = accountInfo;
   }
 }

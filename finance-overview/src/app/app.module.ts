@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
 import { MatTreeModule } from '@angular/material/tree';
+import { HttpClientModule } from '@angular/common/http';
+import { NgForm } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +19,8 @@ import { MatTreeModule } from '@angular/material/tree';
     MatSliderModule,
     MatCardModule,
     MatTreeModule,
-
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -5,10 +5,14 @@ Hello
 <div class="card">
   <div class="card-body">
     <h1 class="card-title">Zulifqar's  Cards</h1>
-    <h4 class="card-subtitle mb-2 text-muted">Total {{amount.Discover}}</h4>
+    <!-- <h4 class="card-subtitle mb-2 text-muted">Total {{amount.Discover}}</h4>
     <h4 class="card-subtitle mb-2 text-muted">Total {{amount.Chase}}</h4>
-    <h4 class="card-subtitle mb-2 text-muted">Total {{amount.BOA}}</h4>
-    <!-- <button type="button" class="btn btn-dark" (click)="getAmount()">Click here to get the amount</button> -->
+    <h4 class="card-subtitle mb-2 text-muted">Total {{amount.BOA}}</h4> -->
+
+
+    <button type="button" class="btn btn-dark" [routerLink]="'creditCards'" >Click here to get the amount</button>
+
+
     <a href="#" class="card-link">Card link</a>
     <a href="#" class="card-link">Another link</a>
   </div>
